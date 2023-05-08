@@ -23,7 +23,11 @@ def counting_words(file_name):
     
     for (word, count) in output:
         out = word + ": " + str(count) + "\n"
-    return out
+    
+    out_file = "out_" + file_name
+    with open(out_file, "w") as f:
+    	f.write.content(out)
+    
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
